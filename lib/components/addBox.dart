@@ -46,7 +46,6 @@ class _AddBox extends State<AddBox> {
            ),
          ],
        ),
-
     );
   }
 }

@@ -9,10 +9,10 @@ class DropMenu extends StatefulWidget {
 
 class _DropMenuState extends State<DropMenu> {
   List<String> listItem = <String>['함양군', '거제시', '산청군'];
+  String dropdownValue = '함양군';
 
   @override
   Widget build(BuildContext context) {
-    String dropdownValue = listItem.first;
     return DropdownButton<String>(
       value: dropdownValue,
       items: listItem.map((e) => DropdownMenuItem(value: e, child: Text(e))).toList(),

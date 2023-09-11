@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:monitoring/components/addBox.dart';
 
 import '../components/DropMenu.dart';
 import '../components/chart.dart';
@@ -27,7 +28,13 @@ class _HomeState extends State<Home> {
             ),
 
             Chart(title: 'oo'),
-            Text("ㅁㅁㅁㅁㅁㅁㅁ")
+            Row(
+              children: [
+                ElevatedButton(onPressed: (){
+                  showDialog(context: context, builder: (context) => AddBox(title: 'oo'));
+                }, child: Text('모달 버튼'))
+              ],
+            )
           ]
       );
   }
