@@ -24,7 +24,9 @@ class _Chart extends State<Chart> {
 
   @override
   Widget build(BuildContext context) {
-    return LineChart(
+    return AspectRatio(
+      aspectRatio: 2,
+      child: LineChart(
         LineChartData(
           gridData: FlGridData(show: false),
           titlesData: FlTitlesData(show: false),
@@ -59,6 +61,7 @@ class _Chart extends State<Chart> {
             ),
           ],
         )
+    ),
     );
   }
 }
