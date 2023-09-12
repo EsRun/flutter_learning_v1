@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:monitoring/pages/Setting.dart';
 
 import '../pages/Home.dart';
 
@@ -11,7 +12,7 @@ class BottomNavi extends StatefulWidget {
 
 class _BottomNaviState extends State<BottomNavi> {
   int _selectedIndex = 0;
-  List _pages = [Home(), Text("2페이지"), Text("3페이지")];
+  List _pages = [Home(), Text("2페이지"), Setting()];
 
   @override
   Widget build(BuildContext context) {

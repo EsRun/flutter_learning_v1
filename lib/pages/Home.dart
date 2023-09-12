@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:monitoring/components/addBox.dart';
+import 'package:monitoring/components/circleProgressBar.dart';
 
 import '../components/DropMenu.dart';
 import '../components/chart.dart';
@@ -18,7 +19,6 @@ class _HomeState extends State<Home> {
       Column(
           children: [
             Row(
-
                 children:  [
                   Flexible(
                       flex: 1,
@@ -26,7 +26,19 @@ class _HomeState extends State<Home> {
                       child: DropMenu())
                 ]
             ),
-
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(
+                    flex: 1,
+                    child: SizedBox(
+                      width: 100,
+                      height: 150,
+                      child: CircleProgress()
+                    )
+                )
+              ],
+            ),
             Chart(title: 'oo'),
             Row(
               children: [
