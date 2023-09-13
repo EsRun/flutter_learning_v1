@@ -41,6 +41,7 @@ class _HomeState extends State<Home> {
             ),
             Chart(title: 'oo'),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(onPressed: (){
                   showDialog(context: context, builder: (context) => AddBox(title: 'oo'));
