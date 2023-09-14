@@ -14,21 +14,25 @@ class _CircleProgressState extends State<CircleProgress> {
     return Column(children: [
       Container(
           child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-            CircleProgressBar(
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.cyan,
-              value: 35,
-              child: AnimatedCount(
-                style: TextField.materialMisspelledTextStyle,
-                count: 1,
-                unit: '%',
-                duration: Duration(milliseconds: 500),
-              ),
-            )
-          ]))
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: const [
+                CircleProgressBar(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.cyan,
+                  value: 35,
+                  child: Center(
+                    child: AnimatedCount(
+                      style: TextField.materialMisspelledTextStyle,
+                      count: 1,
+                      unit: '%',
+                      duration: Duration(milliseconds: 500),
+                    ),
+                  )
+                )
+              ]
+          )
+      )
     ]);
   }
 }
