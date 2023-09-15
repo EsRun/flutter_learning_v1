@@ -11,28 +11,27 @@ class CircleProgress extends StatefulWidget {
 class _CircleProgressState extends State<CircleProgress> {
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      Container(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
-                CircleProgressBar(
-                  foregroundColor: Colors.white,
-                  backgroundColor: Colors.cyan,
-                  value: 35,
+    return Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              width: 200,
+              child: CircleProgressBar(
+                  foregroundColor: Colors.blue,
+                  backgroundColor: Colors.black12,
+                  value: 0.5,
                   child: Center(
                     child: AnimatedCount(
-                      style: TextField.materialMisspelledTextStyle,
-                      count: 1,
+                      fractionDigits: 0,
+                      count: 10,
                       unit: '%',
                       duration: Duration(milliseconds: 500),
                     ),
                   )
-                )
-              ]
-          )
-      )
-    ]);
+              )
+            )
+
+          ]
+      );
   }
 }
