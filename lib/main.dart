@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: '악취 모니터링'),
+      home: const MyHomePage(title: 'Management'),
     );
   }
 }

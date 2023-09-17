@@ -8,8 +8,8 @@ class DropMenu extends StatefulWidget {
 }
 
 class _DropMenuState extends State<DropMenu> {
-  List<String> listItem = <String>['함양군', '거제시', '산청군'];
-  String dropdownValue = '함양군';
+  List<String> listItem = <String>['test1', 'test2', 'test3'];
+  String dropdownValue = 'test1';
 
   @override
   Widget build(BuildContext context) {
