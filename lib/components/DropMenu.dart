@@ -14,6 +14,7 @@ class _DropMenuState extends State<DropMenu> {
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
+      hint: const Text("hint"),
       value: dropdownValue,
       items: listItem.map((e) => DropdownMenuItem(value: e, child: Text(e))).toList(),
 
