@@ -1,6 +1,8 @@
 import 'package:circle_progress_bar/circle_progress_bar.dart';
 import 'package:flutter/material.dart';
 
+import 'DropMenu.dart';
+
 class CircleProgress extends StatefulWidget {
   const CircleProgress({Key? key}) : super(key: key);
 
@@ -9,11 +11,14 @@ class CircleProgress extends StatefulWidget {
 }
 
 class _CircleProgressState extends State<CircleProgress> {
+
+  GlobalKey<DropMenu> oo = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
+          children: const [
             SizedBox(
               width: 200,
               child: CircleProgressBar(

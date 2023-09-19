@@ -11,6 +11,12 @@ class _DropMenuState extends State<DropMenu> {
   List<String> listItem = <String>['test1', 'test2', 'test3'];
   String dropdownValue = 'test1';
 
+  void returnData(String v){
+    setState(() {
+      returnData(v);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
@@ -23,6 +29,8 @@ class _DropMenuState extends State<DropMenu> {
           dropdownValue = value!;
         });
       },
+
     );
+
   }
 }
