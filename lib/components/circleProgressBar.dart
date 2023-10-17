@@ -12,8 +12,6 @@ class CircleProgress extends StatefulWidget {
 
 class _CircleProgressState extends State<CircleProgress> {
 
-  GlobalKey<DropMenu> oo = GlobalKey();
-
   @override
   Widget build(BuildContext context) {
     return Column(
